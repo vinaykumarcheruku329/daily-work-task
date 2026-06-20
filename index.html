@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gym Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🏋️ Gym Habit Tracker</h1>
+    <p>Track your daily fitness habits</p>
+
+    <div class="input-box">
+      <input type="text" id="habitInput" placeholder="Enter habit e.g. Go to Gym">
+      <button onclick="addHabit()">Add</button>
+    </div>
+
+    <div class="default-buttons">
+      <button onclick="quickAdd('Go to Gym')">Go to Gym</button>
+      <button onclick="quickAdd('Drink 3L Water')">Water</button>
+      <button onclick="quickAdd('Eat Protein')">Protein</button>
+      <button onclick="quickAdd('Sleep 8 Hours')">Sleep</button>
+      <button onclick="quickAdd('Stretching')">Stretch</button>
+    </div>
+
+    <h2>Today Habits</h2>
+    <ul id="habitList"></ul>
+
+    <div class="progress-box">
+      <h3>Progress</h3>
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+      <p id="progressText">0% Completed</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
